@@ -2,15 +2,113 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="dist/style.css">
-  <title>SCSS Project</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dist/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
-<body>
-  <header class="header">
-    <h1>Welcome to my SCSS Project</h1>
-  </header>
-</body>
+
+    <title>SCSS Project</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1>Welcome to my SCSS Project</h1>
+      <div class="logo">
+        <img
+          src="logo.png"
+          alt="a photo of a store to represent that this is a E-commerce website"
+          width="200"
+          height="200"
+        />
+      </div>
+      <nav class="navigation">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="hero">
+      <div class="hero-content">
+        <h2>Discover Amazing Products Today</h2>
+        <input type="button" class="cta-button" aria-label="Shop" value="Shop Now" />
+      </div>
+    </section>
+    <!-- Product Showcase Section -->
+    <section>
+      <article class="prodcut 1">
+        <img src="product1.png" alt="Product 1" width="100" height="100" />
+        <h3>Refrigrator</h3>
+        <p>A High Quality Spacious White Refrigrator</p>
+        <p>Best Seller</p>
+      </article>
+      <article class="product 2">
+        <img src="product2.png" alt="Product 2" width="100" height="100" />
+        <h3>Red Refrigrator</h3>
+        <p>A Fancy Red Refrigrator</p>
+      </article>
+      <article class="product 3">
+        <img src="product3.png" alt="Product 3" width="100" height="100" />
+        <h3>Washing Machine</h3>
+        <p>A High Quality Sliver Washing Machine</p>
+      </article>
+    </section>
+
+    <!-- Reviews Sections and Newsletter -->
+    <section class="customer-reviews">
+      <h2>Customer Reviews</h2>
+      <div class="review">
+        <blockquote>
+          "I purchased the white fridge last September, and it is amazing so
+          far! I love that it has a lot of storage which can hold so many
+          things!"
+        </blockquote>
+        <p>- Suzy Chu</p>
+      </div>
+      <div class="review">
+        <blockquote>
+          "I ordered the wahsing machine. The delivery was on time! The washing
+          time doesn't take long and i's not noisy at all! I love it."
+        </blockquote>
+        <p>- Jane Smith</p>
+      </div>
+    </section>
+
+    <!-- Newsletter Subscription Form -->
+    <section class="newsletter">
+      <h2>Subscribe to Our Newsletter</h2>
+      <form action="#" method="post">
+        <input
+          type="email"
+          name="email"
+          placeholder="Enter your email address"
+          required aria-describedby="Email description"/>
+        <button type="submit" role="button">Subscribe</button>
+      </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="#" role="menuitem">Home</a></li>
+          <li><a href="#" role="menuitem">Products</a></li>
+          <li><a href="#" role="menuitem">About Us</a></li>
+          <li><a href="#" role="menuitem">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="contact-info">
+        <p>Contact Us: example@example.com</p>
+        <!-- Add other contact information as needed -->
+      </div>
+      <div class="social-media-icons">
+        <!-- Add social media with appropriate links -->
+        <a href="#"> <i class="fab fa-facebook"> Facebook </i></a>
+        <a href="#"> <i class ="fab fa-instagram"> Instagram </i></a>
+      </div>
+    </footer>
+  </body>
 </html>
