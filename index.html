@@ -6,7 +6,7 @@
     <meta charset="UTF-8" />
     <meta name="description" content="ecommerce website for home appliances such as refrigrators, washing machines, ice makers, microwaves, ovens and much more">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="dist/style.css" />
+    <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
@@ -15,46 +15,96 @@
   <body>
     <header class="header">
       <h1>Welcome to my E-Commerce Project</h1>
+      
       <div class="logo">
-        <img
-          src="logo.png"
+       <img class="logo-image"
+          src="/images/logo.png"
           alt="a photo of a store to represent that this is a E-commerce website"
-          width="200"
-          height="200"
-        />
+        /> <h2> Life Happens Outdoors</h2>
+       
       </div>
-      <nav class="navigation">
-        <ul>
+      <nav class="nav-bar">
+        <ul class="nav-list">
           <li><a href="#" role="link" aria-label="Home page">Home</a></li>
-          <li><a href="#" role="link" aria-label="Products page">Products</a></li>
-          <li><a href="#" role="link" aria-label="About information page">About Us</a></li>
-          <li><a href="#" role="link" aria-label="Contact information page">Contact</a></li>
+          <li><a href="#" role="link" aria-label="All Products page">All Products</a></li>
+          <li><a href="#" role="link" aria-label="Category page">Shop By Category</a></li>
+          <li><a href="#" role="link" aria-label="About information page">Apparel</a></li>
+          <li><a href="#" role="link" aria-label="Footwear page">Footwear</a></li>
+          <li><a href="#" role="link" aria-label="Brands page">Brands</a></li>
+          
         </ul>
       </nav>
     </header>
     <section class="hero">
       <div class="hero-content">
         <h2>Discover Amazing Products Today</h2>
-        <input type="button" role="button" class="cta-button" aria-label="Shop" value="Shop Now" />
+        <!-- <img class ="background" src="/images/wallpaper2.png" alt="wallpaper with a man hiking">  -->
       </div>
+      <input type="button" role="button" class="cta-button" aria-label="Shop" value="Shop Now" />
     </section>
+
     <!-- Product Showcase Section -->
-    <section>
-      <article class="prodcut 1">
-        <img src="product1.png" alt="Product 1: a white refrigrator with two doors, top one is for the freezer, bottom one is for the fridge" width="100" height="100" />
-        <h3>Refrigrator</h3>
-        <p>A High Quality Spacious White Refrigrator with Two Doors; Freezer and Fridge</p>
-        <p>Best Seller</p>
+    <section class="product-section">
+      <article class="product">
+        <img src="/images/product11.png" alt="Product 1: a blue jacket that is intended for outdoor activities" width="100" height="100" />
+        <h3>Blue Jacket </h3>
+        <p>Waterproof Outdoor Jacket</p>
+        <article class="price-tag"> 
+        <p> 350 SAR </p>
+        <button role="button" class="cart-btn"> Add to Cart</button>
+        <button role="button" class="cart-btn"> Quick View</button>
+        </article>
       </article>
-      <article class="product 2">
-        <img src="product2.png" alt="Product 2: a red refrigrator with two doors, top one is for the freezer, bottom one is for the fridge" width="100" height="100" />
-        <h3>Red Refrigrator</h3>
-        <p>A Fancy Red Refrigrator with Two Doors; Freezer and Fridge</p>
+
+      <article class="product">
+        <img src="/images/product22.png" alt="Product 2: a red refrigrator with two doors, top one is for the freezer, bottom one is for the fridge" width="100" height="100" />
+        <h3>Outdoor Hat </h3>
+        <p>A Beige Hiking Hat to Protect You From the Sun</p>
+        <article class="price-tag"> 
+          <p> 185 SAR </p>
+          <button role="button" class="cart-btn"> Add to Cart</button>
+          <button role="button" class="cart-btn"> Quick View</button>
+          </article>
       </article>
-      <article class="product 3">
-        <img src="product3.png" alt="Product 3: a grey washing machine with a circular door" width="100" height="100" />
-        <h3>Washing Machine</h3>
-        <p>A High Quality Sliver Washing Machine</p>
+      <article class="product">
+        <img src="/images/product33.png" alt="Product 3: tech bucket hat" width="100" height="100" />
+        <h3>Outdoor Hat </h3>
+        <p>A High Quality Tech Bucket Hat</p>
+        <article class="price-tag"> 
+          <p> 185 SAR </p>
+          <button role="button" class="cart-btn"> Add to Cart</button>
+          <button role="button" class="cart-btn"> Quick View</button>
+          </article>
+      </article>
+      <article class="product">
+        <img src="/images/product4.png" alt="Product 4: Red Waterproof Windbreaker" width="100" height="100" />
+        <h3>Outdoor Jacket </h3>
+        <p>Waterproof Outdoor Windbreaker</p>
+        <article class="price-tag"> 
+          <p> 380 SAR </p>
+          <button role="button" class="cart-btn"> Add to Cart</button>
+          <button role="button" class="cart-btn"> Quick View</button>
+          </article>
+      </article>
+      <article class="product">
+        <img  src="/images/product5.png" alt="Product 5: Hi-Hiking Boots with strapes " width="100" height="100" />
+        <h3>Hiking Boots </h3>
+        <p>Hiking Boots in Brown</p>
+        <article class="price-tag"> 
+          <p> 585 SAR </p>
+          <button role="button" class="cart-btn"> Add to Cart</button>
+          <button role="button" class="cart-btn"> Quick View</button>
+          </article>
+      </article>
+      <article class="product">
+        <img  src="/images/product6.png" alt="Product 5: Activewear Trousers made from cotton" width="100" height="100" />
+        <h3>Activewear Trousers </h3>
+        <p>A High Quality Trousers in Beige</p>
+        <article class="price-tag"> 
+          <p> 585 SAR </p>
+          <button role="button" class="cart-btn"> Add to Cart</button>
+          <button role="button" class="cart-btn"> Quick View</button>
+          </article>
       </article>
     </section>
 
@@ -63,16 +113,13 @@
       <h2>Customer Reviews</h2>
       <div class="review">
         <blockquote>
-          "I purchased the white fridge last September, and it is amazing so
-          far! I love that it has a lot of storage which can hold so many
-          things!"
+          "I purchased the hiking boots for my summer trip and they're so sturdy and amazing!"
         </blockquote>
         <p>- Suzy Chu</p>
       </div>
       <div class="review">
         <blockquote>
-          "I ordered the wahsing machine. The delivery was on time! The washing
-          time doesn't take long and i's not noisy at all! I love it."
+          "I ordered Windbreaker jacket last year, and it is still in very goos shape! Already thinking of getting it in different colors.."
         </blockquote>
         <p>- Jane Smith</p>
       </div>
@@ -80,7 +127,7 @@
 
     <!-- Newsletter Subscription Form -->
     <section class="newsletter">
-      <h2>Subscribe to Our Newsletter</h2>
+      <h2>Join Our Community & Subscribe to Our Newsletter</h2>
       <form action="#" method="post">
         <input
           type="email"
@@ -94,21 +141,21 @@
     <!-- Footer Section -->
     <footer class="footer">
       <nav class="footer-nav">
-        <ul>
+        <ul class="footer-nav-list">
           <li><a href="#" role="link"  aria-label="Home page">Home</a></li>
-          <li><a href="#" role="link"  aria-label="Products page">Products</a></li>
-          <li><a href="#" role="link"  aria-label="About information page">About Us</a></li>
+          <li><a href="#" role="link"  aria-label="About page">About</a></li>
           <li><a href="#" role="link"  aria-label="Contact information page">Contact</a></li>
         </ul>
       </nav>
       <div class="contact-info">
-        <p>Contact Us: example@example.com</p>
+        <p>Contact Us: outdoors.active@example.com</p>
         <!-- Add other contact information as needed -->
       </div>
       <div class="social-media-icons">
         <!-- Add social media with appropriate links -->
         <a href="#"> <i class="fab fa-facebook"> Facebook </i></a>
         <a href="#"> <i class ="fab fa-instagram"> Instagram </i></a>
+        <p> Developed by Modi YK </p>
       </div>
     </footer>
   </body>

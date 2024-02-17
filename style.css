@@ -1,0 +1,317 @@
+h1 {
+  color: rgb(255, 255, 255);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem; /* Set font size to 1.2rem for both h1 and h2 */
+  margin: 0; /* Remove any default margins */
+  padding-left: 5px;
+}
+
+.logo h2 {
+  padding: 0;
+  top: 0;
+  right: 15px;
+  color: white;
+  font-size: 10px;
+  font-family: Monospace;
+  text-align: justify;
+  transition: color 0.3s ease-in-out;
+}
+/* Header styling */
+header {
+  position: sticky;
+  top: 0;
+  background-color: #8b5a2b; /* Background color of the header */
+  padding: 10px 0; /* Adjust padding as needed */
+  z-index: 1000;
+}
+.logo-image {
+  width: 100px;
+  height: 100px;
+  transition: color 0.3s ease-in-out;
+}
+
+.logo-image:hover {
+  background-color: #16437e;
+  padding-left: 20px; /*  The background of the logo changes  on hover, I just wanted to practice adding transition to different scenarios*/
+}
+.nav-bar ul {
+  display: flex;
+  position: sticky;
+  align-items: center;
+  justify-content: center;
+  background: #8b5a2b;
+  color: white;
+  padding: 8px;
+  margin: 0;
+  list-style-type: none;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  padding: 10px;
+}
+
+.nav-list li {
+  padding: 5px 10px;
+}
+
+.nav-list li:last-child {
+  margin-right: 0;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: color 0.3s ease-in-out; /* Transition on the menu items */
+  padding: 5px 10px; /* Adjust padding */
+  border-radius: 5px;
+}
+
+.nav-list li a:hover {
+  color: #3b7d52;
+  /* Change the color on hover */
+}
+.logo h2:hover {
+  color: #3b7d52; /* Change the color of the logo on hover :) */
+}
+
+.hero {
+  background-color: #f0f0f0;
+  padding: 50px;
+  text-align: center;
+}
+
+.hero-content {
+  background-image: url("/images/wallpaper2.png");
+  height: 600px;
+  width: 900px;
+  padding-bottom: 100px;
+}
+
+.hero-content h2 {
+  font-size: 30px;
+  width: 1300px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #3b7d52;
+}
+
+.cta-button {
+  background-color: #3b7d52;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+/* Header Styling Ends Here */
+
+/* Body Styling  */
+body {
+  font-size: 16px;
+}
+/* Body Styling Ends Here */
+
+/* Product Styling */
+.product-section,
+.product {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(200px, 1fr)
+  ); /*Create auto-fill columns with minimum width of 200px */
+  gap: 20px; /* Add gap between grid items */
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.product img {
+  width: 100px;
+  height: 100px;
+  max-width: 100%;
+  height: auto;
+  padding-left: 50px;
+}
+
+.product-title {
+  font-size: 1.2rem; /* Adjust the font size */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Product description */
+.product-description {
+  font-size: 1rem; /* Adjust the font size */
+  color: #555; /* Change the color to a darker shade */
+  margin-bottom: 10px; /* Add more space below the description */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Price tag */
+.price-tag {
+  background-color: #f2f2f2; /* Add a light background color  to price tag */
+  padding: 10px;
+  border-radius: 5px; /* Add rounded nice corners :) */
+}
+
+/* Price */
+
+.cart-btn {
+  background-color: #3b7d52;
+  border: 0;
+  border-radius: 100px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 9px;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px 20px;
+  text-align: center;
+}
+.cart-btn:hover {
+  background-color: #16437e;
+}
+
+/* Product Styling  Ends Here */
+
+/* Styling for Newsletter Section */
+.newsletter {
+  background-color: #eaeaea;
+  padding: 50px;
+}
+
+.newsletter h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.newsletter input[type="email"] {
+  padding: 10px;
+  width: 300px;
+  margin-bottom: 10px;
+}
+
+.newsletter button {
+  background-color: #3b7d52;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+/* Newsletter Styling Ends Here */
+
+/* Footer Styling */
+
+.footer {
+  top: 0;
+  background-color: #8b5a2b; /* Background color of the footer */
+  padding: 10px 0; /* Adjust padding as needed */
+  z-index: 1000;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  top: 0;
+}
+
+.footer-nav-list {
+  display: flex;
+  list-style: none;
+}
+
+.footer-nav-list li {
+  margin-right: 20px;
+}
+
+.footer-nav-list li:last-child {
+  margin-right: 0;
+}
+
+.footer-nav-list li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: color 0.3s ease-in-out;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.social-media-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  padding: 8px;
+  margin: 0;
+}
+.contact-info {
+  text-align: center;
+  color: white;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.footer-nav-list li a:hover {
+  color: #ffd700; /* Change the color on hover */
+}
+
+.rightNav {
+  text-align: right;
+}
+
+/* Footer Styling Ends Here */
+
+/* Responsive Layout */
+@media screen and (max-width: 1024px) {
+  /* Adjust styles for smaller screens */
+  .container {
+    padding: 0 10px;
+  }
+  header,
+  nav,
+  main,
+  footer {
+    padding: 10px 0;
+  }
+  .hero-content h2 {
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 300px) {
+  .hero,
+  .hero-section {
+    background-image: url("/images/wallpaper2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; /* Center the background image */
+  }
+  .hero-content h2 {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 400px) {
+  .hero-content h2 {
+    padding: 0;
+    width: 300px;
+    text-align: center;
+    font-size: 10px;
+  }
+}
+
+/*  @media screen and (max-width: 1024px) {
+}
+@media screen and (max-width: 768px) {
+}
+@media screen and (max-width: 400px) */
